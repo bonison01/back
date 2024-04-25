@@ -1,31 +1,34 @@
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { Content } from "./content";
 
 export function AboutsMain() {
-  // State to manage the input value
-  const [inputValue, setInputValue] = useState("");
-
-  // Function to handle input change
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
-  };
-
   return (
     <div className="text-center pt-20 pb-10 sm:pt-32 flex flex-col justify-center items-center space-y-4">
-      {/* Input field */}
-      <input
-        type="text"
-        value={inputValue}
-        onChange={handleInputChange}
-        placeholder="Enter something..."
-        className="border border-gray-300 rounded px-4 py-2"
-      />
       
-      {/* Optional: Display the input value */}
-      {inputValue && (
-        <p className="mt-2">You entered: {inputValue}</p>
-      )}
+      <div className="border border-gray-400 rounded-lg p-4">
+        <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+          <Link href="/padding_order">
+            <a>Contact 1</a>
+          </Link>
+        </button>
+      </div>
+
+      <div className="border border-gray-400 rounded-lg p-4">
+        <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+          <Link href="/contact-us">
+            <a>Contact 2</a>
+          </Link>
+        </button>
+      </div>
+      
+      <div className="border border-gray-400 rounded-lg p-4">
+        <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+          <Link href="/delivery-rates">
+            <a>Contact 3</a>
+          </Link>
+        </button>
+      </div>
     </div>
   );
 }
