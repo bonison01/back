@@ -3,15 +3,16 @@ import Link from "next/link";
 
 export function AboutsMain() {
   return (
-    <div className="text-center pt-20 pb-10 sm:pt-32 flex flex-col justify-center items-center space-y-4">
+    <div className="h-screen flex justify-center items-center">
       {/* Embedded Google Sheets iframe */}
-      <div className="w-full max-w-screen-lg mx-auto">
+      <div className="w-full h-full">
         {/* Apply styles to the iframe */}
         <iframe
-          className="w-full h-auto border border-gray-300 shadow-md"
+          className="w-full h-full"
           src="https://script.google.com/macros/s/AKfycbyhKZikvxQtO01js866bw-08g2526Nzn58hiZYgPaKYlEcjkii-0k9aCjBv7KElSimlLg/exec"
-          title="Embedded Google Sheet"
-          scrolling="no"
+          title="Track your Order"
+          frameBorder="0"
+          allowFullScreen
         ></iframe>
       </div>
     </div>
