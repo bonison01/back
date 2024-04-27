@@ -32,7 +32,7 @@ export function AboutsMain() {
       {/* Embedded Google Sheets iframe */}
       <div className="w-full max-w-screen-lg mx-auto">
         <iframe
-          src="https://script.google.com/macros/s/AKfycbyhKZikvxQtO01js866bw-08g2526Nzn58hiZYgPaKYlEcjkii-0k9aCjBv7KElSimlLg/exec"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRWYs8ubYVSuH9JiNDx8lsNz6aRB-X4jOyXoKrpmi6W_EPBsBIZqhA40qAlBwFdXlGazX7JqAu6v_nY/pubhtml?gid=1755402323&single=true"
           width="300%"
           height="600" // Adjust the height as needed
           frameBorder="0"
