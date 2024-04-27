@@ -3,11 +3,7 @@ import Link from "next/link";
 
 export function AboutsMain() {
   return (
-    <div
-      className={cn(
-        "text-center pt-20 pb-10 sm:pt-32 flex flex-col justify-center items-center space-y-4",
-        poppinsFont.className
-      )}>
+    <div className="text-center pt-20 pb-10 sm:pt-32 flex flex-col justify-center items-center space-y-4">
       {/* Embedded Google Sheets iframe */}
       <div className="w-full max-w-screen-lg mx-auto">
         <iframe
