@@ -3,7 +3,11 @@ import Link from "next/link";
 
 export function AboutsMain() {
   return (
-    <div>
+    <div
+      className={cn(
+        "text-center pt-20 pb-10 sm:pt-32 flex flex-col justify-center items-center space-y-4",
+        poppinsFont.className
+      )}>
       {/* Embedded Google Sheets iframe */}
       <div className="w-full max-w-screen-lg mx-auto">
         <iframe
@@ -13,7 +17,7 @@ export function AboutsMain() {
           frameBorder="0"
           allowFullScreen
           title="Embedded Google Sheets"
-          style={{ minHeight: "800px" }} // Set minimum height for responsiveness
+          style={{ minHeight: "500px" }} // Set minimum height for responsiveness
         ></iframe>
       </div>
     </div>
