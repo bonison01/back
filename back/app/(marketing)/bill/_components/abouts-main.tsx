@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function AboutsMain() {
   return (
-    <div className="text-center pt-20 pb-10 sm:pt-32">
+    <div>
       {/* Embedded Google Sheets iframe */}
       <div className="w-full max-w-screen-lg mx-auto">
         <iframe
