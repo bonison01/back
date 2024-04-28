@@ -3,17 +3,52 @@ import Link from "next/link";
 
 export function AboutsMain() {
   return (
-    <div className="h-screen flex justify-center items-center">
+    <div className="text-center pt-20 pb-10 sm:pt-32">
+      {/* Button container with flex layout */}
+      <div className="flex justify-center space-x-4 mb-4">
+        {/* Buttons with Link components */}
+        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
+          <Link href="/BB collection-today">
+            <a>Today Orders</a>
+          </Link>
+        </button>
+        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
+          <Link href="/BB collection-total">
+            <a>Total Orders</a>
+          </Link>
+        </button>
+        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
+          <Link href="/BB collection-pending">
+            <a>Pending Orders</a>
+          </Link>
+        </button>
+        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
+          <Link href="/BB collection-3day">
+            <a>Last 3 day Orders</a>
+          </Link>
+        </button>
+      </div>
+
       {/* Embedded Google Sheets iframe */}
-      <div className="w-full h-full">
-        {/* Apply styles to the iframe */}
+      <div className="w-full max-w-screen-lg mx-auto">
         <iframe
-          className="w-full h-full"
-          src="https://script.google.com/macros/s/AKfycbyhKZikvxQtO01js866bw-08g2526Nzn58hiZYgPaKYlEcjkii-0k9aCjBv7KElSimlLg/exec"
-          title="Track your Order"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTEPw4VlPYfXY3wjxEGJ2dVJIb8o2GD383CoKjfVeJgZnhN0noBGq4pwKUwJse03lZnZ9Z4nzj-NPd9/pubhtml?gid=2033319182&single=true"
+          width="300%"
+          height="600" // Adjust the height as needed
           frameBorder="0"
           allowFullScreen
+          title="Embedded Google Sheets"
+          style={{ minHeight: "800px" }} // Set minimum height for responsiveness
         ></iframe>
+      </div>
+
+      {/* Optional: Add a button or link */}
+      <div className="flex justify-center mt-4">
+        <Link href="/test">
+          <a className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Test Button
+          </a>
+        </Link>
       </div>
     </div>
   );
