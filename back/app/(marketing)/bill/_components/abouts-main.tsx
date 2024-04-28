@@ -28,8 +28,17 @@ export function AboutsMain() {
           </Link>
         </button>
       </div>
-
-      {/* Embedded Google Sheets iframe */}
+      {/* Optional: Add a button or link */}
+      <div className="flex justify-center mt-4">
+        <Link href="/test">
+          <a className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Test Button
+          </a>
+        </Link>
+      </div>
+    </div>
+  );
+  {/* Embedded Google Sheets iframe */}
       <div className="w-full max-w-screen-lg mx-auto">
         <iframe
           src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTEPw4VlPYfXY3wjxEGJ2dVJIb8o2GD383CoKjfVeJgZnhN0noBGq4pwKUwJse03lZnZ9Z4nzj-NPd9/pubhtml?gid=2033319182&single=true"
@@ -41,17 +50,6 @@ export function AboutsMain() {
           style={{ minHeight: "800px" }} // Set minimum height for responsiveness
         ></iframe>
       </div>
-
-      {/* Optional: Add a button or link */}
-      <div className="flex justify-center mt-4">
-        <Link href="/test">
-          <a className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Test Button
-          </a>
-        </Link>
-      </div>
-    </div>
-  );
 }
 
 export default AboutsMain;
