@@ -1,12 +1,10 @@
 import React from "react";
-import Link from "next/link";
 
-export function AboutsMain() {
+export default function AboutsMain() {
   return (
-    <div className="h-screen flex justify-center items-center">
-      {/* Embedded Google Sheets iframe */}
+    <div className="min-h-screen flex justify-center items-center">
+      {/* This div will make sure the iframe is centered and covers the whole screen */}
       <div className="w-full h-full">
-        {/* Apply styles to the iframe */}
         <iframe
           className="w-full h-full"
           src="https://script.google.com/macros/s/AKfycbyyQVK4hHNJZ6LngIYc889b1yCnzwuBfEl8xum4nDjZOGp1lHBXEbyts248HbZD6Eb28A/exec"
@@ -18,5 +16,3 @@ export function AboutsMain() {
     </div>
   );
 }
-
-export default AboutsMain;
