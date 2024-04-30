@@ -3,16 +3,20 @@ import Link from "next/link";
 
 export function AboutsMain() {
   return (
-    <div className="w-full max-w-screen-lg mx-auto">
+    <div className="h-screen flex justify-center items-center">
+      {/* Embedded Google Sheets iframe */}
+      <div className="w-full h-full">
+        {/* Apply styles to the iframe */}
         <iframe
-          src="https://script.google.com/macros/s/AKfycbyyQVK4hHNJZ6LngIYc889b1yCnzwuBfEl8xum4nDjZOGp1lHBXEbyts248HbZD6Eb28A/exec"
-          width="300%"
-          height="600" // Adjust the height as needed
+          className="w-full h-full"
+          src="https://script.google.com/macros/s/AKfycbxy4qYFPBKtM-cmCgyxnJhMpLtnDIkr5w1NPL3lNpA2zz66LQ6tWSFA52dK2X3Fq4mmuw/exec"
+          title="Track your Order"
           frameBorder="0"
           allowFullScreen
-          title="Embedded Google Sheets"
-          style={{ minHeight: "800px" }} // Set minimum height for responsiveness
         ></iframe>
       </div>
+    </div>
   );
 }
+
+export default AboutsMain;
