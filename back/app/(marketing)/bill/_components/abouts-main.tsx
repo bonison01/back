@@ -1,11 +1,13 @@
 import React from "react";
+import Link from "next/link";
 
-export default function AboutsMain() {
+export function AboutsMain() {
   return (
+    // Use the min-h-screen class to ensure that the div takes at least the full height of the viewport
     <div className="min-h-screen flex justify-center items-center">
-      {/* This div will make sure the iframe is centered and covers the whole screen */}
       <div className="w-full h-full">
         <iframe
+          // Ensure that the iframe covers the full width and height of its container
           className="w-full h-full"
           src="https://script.google.com/macros/s/AKfycbyyQVK4hHNJZ6LngIYc889b1yCnzwuBfEl8xum4nDjZOGp1lHBXEbyts248HbZD6Eb28A/exec"
           title="Track your Order"
@@ -16,3 +18,5 @@ export default function AboutsMain() {
     </div>
   );
 }
+
+export default AboutsMain;
