@@ -1,12 +1,14 @@
 import React from "react";
 import Link from "next/link";
 
-export default function AboutsMain() {
+export function AboutsMain() {
   return (
-    <div className="container">
-      <div className="iframe-container">
+    <div className="h-screen flex justify-center items-center">
+      {/* Embedded Google Sheets iframe */}
+      <div className="w-full h-full">
+        {/* Apply styles to the iframe */}
         <iframe
-          className="iframe-fullscreen"
+          className="w-full h-full"
           src="https://script.google.com/macros/s/AKfycbyyQVK4hHNJZ6LngIYc889b1yCnzwuBfEl8xum4nDjZOGp1lHBXEbyts248HbZD6Eb28A/exec"
           title="Track your Order"
           frameBorder="0"
@@ -16,3 +18,5 @@ export default function AboutsMain() {
     </div>
   );
 }
+
+export default AboutsMain;
