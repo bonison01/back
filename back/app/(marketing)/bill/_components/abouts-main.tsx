@@ -3,9 +3,7 @@ import Link from "next/link";
 
 export function AboutsMain() {
   return (
-    <div className="h-screen flex justify-center items-center overflow-x-auto">
-      {/* This container will allow horizontal scrolling */}
-      <div className="w-full h-full" style={{ minWidth: '100%' }}>
+      <div>
         <iframe
           className="w-full h-full"
           style={{ width: '400%', height: '100%' }}
