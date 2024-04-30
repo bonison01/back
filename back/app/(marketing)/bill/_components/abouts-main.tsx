@@ -11,8 +11,6 @@ export function AboutsMain() {
           className="w-full h-full"
           src="https://script.google.com/macros/s/AKfycbyyQVK4hHNJZ6LngIYc889b1yCnzwuBfEl8xum4nDjZOGp1lHBXEbyts248HbZD6Eb28A/exec"
           title="Track your Order"
-          frameBorder="1"
-          allowFullScreen
         ></iframe>
       </div>
     </div>
