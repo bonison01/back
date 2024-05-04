@@ -8,23 +8,28 @@ export function AboutsMain() {
       <div className="flex justify-center space-x-4 mb-4">
         {/* Buttons with Link components */}
         <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/beadsimphal-today">
-            <a>Today Orders</a>
-          </Link>
-        </button>
-        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/beadsimphal-total">
+          <Link href="/ima-total">
             <a>Total Orders</a>
           </Link>
         </button>
         <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/beadsimphal-pending">
+          <Link href="/ima-pending">
             <a>Pending Orders</a>
           </Link>
         </button>
         <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/beadsimphal-3day">
+          <Link href="/ima-3day">
             <a>Last 3 day Orders</a>
+          </Link>
+        </button>
+         <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
+          <Link href="/ima-planB2">
+            <a>Imphal Area</a>
+          </Link>
+        </button>
+        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
+          <Link href="/ima-planB3">
+            <a>Ousitde Imphal</a>
           </Link>
         </button>
       </div>
