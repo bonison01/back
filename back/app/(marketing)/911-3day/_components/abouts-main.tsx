@@ -7,7 +7,7 @@ export function AboutsMain() {
       {/* Embedded Google Sheets iframe */}
       <div className="w-full max-w-screen-lg mx-auto">
         <iframe
-          src="https://script.google.com/macros/s/AKfycbxlNWKc2ST54ZODbo5j4muou5fb0nbUwV58NLlExMb5UBPNZF4SzxxzbMFEdflzCpx9KA/exec"
+          src="https://script.google.com/macros/s/AKfycbyEKXZg3uXYSalwEtZ0u-gL-XyaF_yiF8XsIi4ifxEqEBiLcT-Yv18iLuSs0vlfZedLlA/exec"
           width="300%"
           height="600" // Adjust the height as needed
           frameBorder="0"
@@ -34,7 +34,7 @@ export function AboutsMain() {
       {/* Embedded Google Sheets iframe */}
       <div className="w-full max-w-screen-lg mx-auto">
         <iframe
-          src="https://script.google.com/macros/s/AKfycbyEKXZg3uXYSalwEtZ0u-gL-XyaF_yiF8XsIi4ifxEqEBiLcT-Yv18iLuSs0vlfZedLlA/exec"
+          src="https://script.google.com/macros/s/AKfycbxlNWKc2ST54ZODbo5j4muou5fb0nbUwV58NLlExMb5UBPNZF4SzxxzbMFEdflzCpx9KA/exec"
           width="300%"
           height="600" // Adjust the height as needed
           frameBorder="0"
