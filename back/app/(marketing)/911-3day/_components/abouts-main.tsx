@@ -9,10 +9,9 @@ export function AboutsMain() {
         <iframe
           src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKFr7rh_ACgQ957gpeC0GOUxKS_z5jwk0-VywCjrqxd7_Q1IUNKCR6_gac9zLXco6ojRXgi4vkEuDX/pubhtml?gid=2033319182&single=true"
           width="300%"
-          height="600" // Adjust the height as needed
           frameBorder="0"
           allowFullScreen
-          title="Embedded Google Sheets"
+          title="Balance"
           style={{ minHeight: "800px" }} // Set minimum height for responsiveness
         ></iframe>
       </div>
