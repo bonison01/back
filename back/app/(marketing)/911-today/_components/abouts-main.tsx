@@ -1,15 +1,26 @@
 import React from "react";
 import Link from "next/link";
+import styles from "./AboutsMain.module.css"; // Import CSS module
 
-export function AboutsMain() {
+function AboutsMain() {
   return (
-       <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ4lGvSRnYQUInoFIyzTRnl5uT-0H3bumKa7mAPL-Tkx9wErmZiXrhywV5zERfS2wryuhrhMmdhg_9w/pubhtml?gid=2145206756&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+    <div className={styles["full-screen-container"]}>
+      {/* Button container with flex layout */}
+      <div className={`${styles["text-center"]} ${styles["pt-20"]} ${styles["pb-10"]} ${styles["sm-pt-32"]}`}>
+        {/* Buttons with Link components */}
+        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
+          <Link href="/911-today">
+            <a>Today Orders</a>
+          </Link>
+        </button>
+        {/* Add similar buttons for other links */}
+      </div>
 
       {/* Embedded Google Sheets iframe */}
       <div className="w-full max-w-screen-lg mx-auto">
         <iframe
           src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS_mahjlomhCW9nR8UGCePcaNb7rchT0hhhdYhMc8Syk5nNlPN1UN7wRJZ1pi23UpalLe76D0kKjNi9/pubhtml?gid=1385903661&single=true"
-          width="300%"
+          width="100%"
           height="600" // Adjust the height as needed
           frameBorder="0"
           allowFullScreen
