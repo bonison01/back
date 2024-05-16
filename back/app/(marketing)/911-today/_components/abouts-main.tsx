@@ -28,6 +28,7 @@ export function AboutsMain() {
           </Link>
         </button>
       </div>
+       <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ4lGvSRnYQUInoFIyzTRnl5uT-0H3bumKa7mAPL-Tkx9wErmZiXrhywV5zERfS2wryuhrhMmdhg_9w/pubhtml?gid=2145206756&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
       {/* Embedded Google Sheets iframe */}
       <div className="w-full max-w-screen-lg mx-auto">
@@ -41,7 +42,6 @@ export function AboutsMain() {
           style={{ minHeight: "800px" }} // Set minimum height for responsiveness
         ></iframe>
       </div>
-      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ4lGvSRnYQUInoFIyzTRnl5uT-0H3bumKa7mAPL-Tkx9wErmZiXrhywV5zERfS2wryuhrhMmdhg_9w/pubhtml?gid=2145206756&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
       {/* Optional: Add a button or link */}
       <div className="flex justify-center mt-4">
