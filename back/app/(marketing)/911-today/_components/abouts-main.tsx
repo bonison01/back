@@ -3,11 +3,11 @@ import Link from "next/link";
 
 function AboutsMain() {
   return (
-    <div className={styles["full-screen-container"]}>
+    <div>
       {/* Button container with flex layout */}
-      <div className={`${styles["text-center"]} ${styles["pt-20"]} ${styles["pb-10"]} ${styles["sm-pt-32"]}`}>
+      <div></div>
         {/* Buttons with Link components */}
-        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
+        <button>
           <Link href="/911-today">
             <a>Today Orders</a>
           </Link>
@@ -18,4 +18,3 @@ function AboutsMain() {
   );
 }
 
-export default AboutsMain;
