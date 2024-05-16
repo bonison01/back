@@ -4,31 +4,32 @@ import Link from "next/link";
 export function AboutsMain() {
   return (
     <div className="text-center pt-20 pb-10 sm:pt-32">
-      {/* Embedded Google Sheets iframe */}
-      <div className="w-full max-w-screen-lg mx-auto">
-        <iframe
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKFr7rh_ACgQ957gpeC0GOUxKS_z5jwk0-VywCjrqxd7_Q1IUNKCR6_gac9zLXco6ojRXgi4vkEuDX/pubhtml?gid=2033319182&single=true"
-          width="500%"
-          frameBorder="0"
-          title="Balance"
-        ></iframe>
-      </div>
       {/* Button container with flex layout */}
       <div className="flex justify-center space-x-4 mb-4">
         {/* Buttons with Link components */}
         <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/911-today">
-            <a>Today Orders</a>
-          </Link>
-        </button>
-        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/911-total">
+          <Link href="/ima-total">
             <a>Total Orders</a>
           </Link>
         </button>
         <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/911-pending">
+          <Link href="/ima-pending">
             <a>Pending Orders</a>
+          </Link>
+        </button>
+        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
+          <Link href="/ima-3day">
+            <a>Last 3 day Orders</a>
+          </Link>
+        </button>
+         <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
+          <Link href="/ima-planB2">
+            <a>Imphal Area</a>
+          </Link>
+        </button>
+        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
+          <Link href="/ima-planB3">
+            <a>Ousitde Imphal</a>
           </Link>
         </button>
       </div>
@@ -36,7 +37,7 @@ export function AboutsMain() {
       {/* Embedded Google Sheets iframe */}
       <div className="w-full max-w-screen-lg mx-auto">
         <iframe
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vToiHUVcwU5eqiSsNdHYC5tqjTX_gWw4z_lTfttuazvuFkAZy3A4Wdyw-A7hmj-41Er1zxl4p7Lj1gK/pubhtml?gid=691031807&single=true"
+          src="https://script.google.com/macros/s/AKfycbyhKZikvxQtO01js866bw-08g2526Nzn58hiZYgPaKYlEcjkii-0k9aCjBv7KElSimlLg/exec"
           width="300%"
           height="600" // Adjust the height as needed
           frameBorder="0"
@@ -45,11 +46,15 @@ export function AboutsMain() {
           style={{ minHeight: "800px" }} // Set minimum height for responsiveness
         ></iframe>
       </div>
-      <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/911-3day">
-            <a>Last 3 day Orders</a>
-          </Link>
-        </button>
+
+      {/* Optional: Add a button or link */}
+      <div className="flex justify-center mt-4">
+        <Link href="/test">
+          <a className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Test Button
+          </a>
+        </Link>
+      </div>
     </div>
   );
 }
