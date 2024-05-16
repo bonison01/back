@@ -6,38 +6,12 @@ export function AboutsMain() {
     <div className="text-center pt-20 pb-10 sm:pt-32">
       {/* Button container with flex layout */}
       <div className="flex justify-center space-x-4 mb-4">
-        {/* Buttons with Link components */}
-        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/ima-total">
-            <a>Total Orders</a>
-          </Link>
-        </button>
-        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/ima-pending">
-            <a>Pending Orders</a>
-          </Link>
-        </button>
-        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/ima-3day">
-            <a>Last 3 day Orders</a>
-          </Link>
-        </button>
-         <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/ima-planB2">
-            <a>Imphal Area</a>
-          </Link>
-        </button>
-        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/ima-planB3">
-            <a>Ousitde Imphal</a>
-          </Link>
-        </button>
       </div>
 
       {/* Embedded Google Sheets iframe */}
       <div className="w-full max-w-screen-lg mx-auto">
         <iframe
-          src="https://script.google.com/macros/s/AKfycbyhKZikvxQtO01js866bw-08g2526Nzn58hiZYgPaKYlEcjkii-0k9aCjBv7KElSimlLg/exec"
+          src="https://script.google.com/macros/s/AKfycbyvFoKs5_zfX2PNoaSAIIKjKgkryZkitxfBw21PG6mq0m1SJpByGZf-twzGlhBOb0Sw/exec"
           width="300%"
           height="600" // Adjust the height as needed
           frameBorder="0"
