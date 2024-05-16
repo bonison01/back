@@ -3,31 +3,6 @@ import Link from "next/link";
 
 export function AboutsMain() {
   return (
-    <div className="text-center pt-20 pb-10 sm:pt-32">
-      {/* Button container with flex layout */}
-      <div className="flex justify-center space-x-4 mb-4">
-        {/* Buttons with Link components */}
-        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/911-today">
-            <a>Today Orders</a>
-          </Link>
-        </button>
-        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/911-total">
-            <a>Total Orders</a>
-          </Link>
-        </button>
-        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/911-pending">
-            <a>Pending Orders</a>
-          </Link>
-        </button>
-        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
-          <Link href="/911-3day">
-            <a>Last 3 day Orders</a>
-          </Link>
-        </button>
-      </div>
        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ4lGvSRnYQUInoFIyzTRnl5uT-0H3bumKa7mAPL-Tkx9wErmZiXrhywV5zERfS2wryuhrhMmdhg_9w/pubhtml?gid=2145206756&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
 
       {/* Embedded Google Sheets iframe */}
