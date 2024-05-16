@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import styles from "./AboutsMain.css"; // Import CSS module
 
 function AboutsMain() {
   return (
