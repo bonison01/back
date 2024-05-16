@@ -24,7 +24,6 @@ export function AboutsMain() {
           </a>
         </Link>
       </div>
-    </div>
   );
 }
 
