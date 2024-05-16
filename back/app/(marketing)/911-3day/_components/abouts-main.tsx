@@ -6,6 +6,13 @@ export function AboutsMain() {
     <div className="text-left">
       {/* Embedded Google Sheets iframe */}
       <div className="w-full max-w-screen-lg mx-auto">
+        <div>
+          <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-2 rounded">
+            <Link href="/ima-pending">
+              <a style={{ fontWeight: 'bold', textDecoration: 'underline' }}>Pending Orders</a>
+            </Link>
+          </button>
+        </div>
         <iframe
           src="https://script.google.com/macros/s/AKfycbyvFoKs5_zfX2PNoaSAIIKjKgkryZkitxfBw21PG6mq0m1SJpByGZf-twzGlhBOb0Sw/exec"
           width="300%"
