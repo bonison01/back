@@ -8,11 +8,9 @@ export function AboutsMain() {
       <div className="w-full max-w-screen-lg mx-auto">
         <iframe
           src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKFr7rh_ACgQ957gpeC0GOUxKS_z5jwk0-VywCjrqxd7_Q1IUNKCR6_gac9zLXco6ojRXgi4vkEuDX/pubhtml?gid=2033319182&single=true"
-          width="300%"
+          width="500%"
           frameBorder="0"
-          allowFullScreen
           title="Balance"
-          style={{ minHeight: "800px" }} // Set minimum height for responsiveness
         ></iframe>
       </div>
       {/* Button container with flex layout */}
